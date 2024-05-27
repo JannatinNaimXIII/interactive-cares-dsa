@@ -1,4 +1,4 @@
-# DSA Live Class - 01 - JavaScript Arrays
+# DSA Live Class - 03 - JavaScript Arrays
 
 ###### Arrays
 
