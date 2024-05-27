@@ -57,7 +57,8 @@ JavaScript cannot be directly ran on a computer. You need a JavaScript engine th
 
 ###### Dynamic Type System in JavaScript
 
-In JavaScript you don't need to specify what type of data is being put into a variable. Such as, assigning a number into
+In JavaScript, you don't need to specify what type of data is being put into a variable. Such as, assigning a number
+into
 a variable will need only the variable name, and assignment operator and the value itself. JavaScript will store the
 value internally as a specific type based on the value provided but that will be abstracted away into the engine itself.
 
@@ -84,7 +85,7 @@ const c = "Oracle"
 
 Variables are first *initiated*/*declared* and then *assigned* a value. Variables that are declared but are not assigned
 a value when it's initialized, is given a value of `undefined`. Variables declared with `const` cannot be initialized
-without a value provided during it's declaration.
+without a value provided during its declaration.
 
 ```javascript
 let course; // undefined

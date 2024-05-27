@@ -1,3 +1,5 @@
+# DSA Live Class - 02 - JavaScript Data Types & Type Coercion
+
 ###### Fun Fact
 
 The most powerful asset at present times is *data*. The one who holds the most amount of data has the most control over
@@ -166,7 +168,7 @@ const person = {
 
 ###### Type Coercion/Casting
 
-In JavaScript we can *convert* one primitive type to another. This can either be done implicitly or explicitly.
+In JavaScript, we can *convert* one primitive type to another. This can either be done implicitly or explicitly.
 
 This is especially important when fetching data from external sources such as an HTTP response or an HTML Form. The data
 we get might be in a string representation which is a sequence of digits. We can convert such strings into JavaScript

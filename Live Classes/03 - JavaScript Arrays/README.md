@@ -1,4 +1,6 @@
-###### JavaScript Arrays
+# DSA Live Class - 01 - JavaScript Arrays
+
+###### Arrays
 
 In a variable, we can only store *one primitive value*. We can change its value but, it will only contain one value. In
 case we need to store multiple values in a single variable, we can use an array.
