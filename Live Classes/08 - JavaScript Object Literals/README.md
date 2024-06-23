@@ -2,9 +2,10 @@
 
 ###### Object Initialization & Accessing Values
 
-Objects are a store of *key value pairs* in JavaScript. Objects can be created using the *object literal syntax*. Values
-inside an object can be accessed using the identifier followed by a `.` and then the key or using the identifier and the
-key in between `[]`.
+Objects are a store of *key value pairs* in JavaScript. Objects can be created
+using the *object literal syntax*. Values inside an object can be accessed using
+the identifier followed by a `.` and then the key or using the identifier and
+the key in between `[]`.
 
 ```javascript
 let object = {
@@ -27,9 +28,10 @@ console.log(person["age"]); // 20
 
 ###### Value Types
 
-The keys can hold any type of value. The ones that hold information we call them *properties* and the ones that contain
-functions, we call them *methods*. Functions when they are part of an object are called methods. Methods can be declared
-like properties or as a function declaration.
+The keys can hold any type of value. The ones that hold information we call them
+*properties* and the ones that contain functions, we call them *methods*.
+Functions when they are part of an object are called methods. Methods can be
+declared like properties or as a function declaration.
 
 ```javascript
 const phone = {
@@ -59,16 +61,18 @@ console.log(x.y); // undefined
 
 ###### Strict Mode
 
-JavaScript's *strict mode* can be used to prevent common bugs from appearing in our code. It sets some stricter
-guidelines to follow while coding. Code that may be valid JavaScript and will be executed without *errors* will often be
-blocked by the strict mode in case it contains dangerous behavior.
+JavaScript's *strict mode* can be used to prevent common bugs from appearing in
+our code. It sets some stricter guidelines to follow while coding. Code that may
+be valid JavaScript and will be executed without *errors* will often be blocked
+by the strict mode in case it contains dangerous behavior.
 
 - [JavaScript "use strict" (w3schools.com)](https://www.w3schools.com/js/js_strict.asp)
 
 ###### Object Property Mutation
 
-Properties in objects can be modified or new properties can be introduced using the assignment operator. Properties of
-an object can be removed using the `delete` keyword.
+Properties in objects can be modified or new properties can be introduced using
+the assignment operator. Properties of an object can be removed using
+the `delete` keyword.
 
 ```javascript
 const os = {
@@ -85,7 +89,8 @@ console.log(os); // {name: "Windows 11", build: "22H2"}
 
 ###### Nested Object Properties
 
-Objects can contain objects as values and as such `.` can be chained to reach deeply nested values.
+Objects can contain objects as values and as such `.` can be chained to reach
+deeply nested values.
 
 ```javascript
 const x = {
@@ -138,8 +143,9 @@ for (const key in person) {
 
 ###### Factory Functions
 
-Objects that are created with the same set of keys can be produced using a *factory function* or a *constructor
-function* that provide a common blueprint to create new objects with similar keys but different values.
+Objects that are created with the same set of keys can be produced using a
+*factory function* or a *constructor function* that provide a common blueprint
+to create new objects with similar keys but different values.
 
 ```javascript
 function createPhone(brand, model, price) {
@@ -157,8 +163,9 @@ const samsungGalaxyS20Ultra = createPhone("Samsung", "S20 Ultra", 120_000);
 console.log(iPhone14ProMax); // {brand: "Apple", model: "14 Pro Max", price: 120000, isAvailable: true}
 ```
 
-NOTE: When using a variable as the value of a key in an object literal, if the name of the key and the variable matches,
-we can omit the `:` and just write the variable name as a property.
+NOTE: When using a variable as the value of a key in an object literal, if the
+name of the key and the variable matches, we can omit the `:` and just write the
+variable name as a property.
 
 NOTE: Numbers in JavaScript can contain `_` to help with readability.
 

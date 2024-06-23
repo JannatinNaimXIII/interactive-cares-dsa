@@ -2,9 +2,10 @@
 
 ###### Conditional Statements
 
-Conditional statements are blocks of code that are only ran if a certain *condition* is met. The `if` keyword is used to
-create conditional statements in JavaScript. Blocks of code that are put under an `if` statement will only be run if the
-*condition* provided is evaluated to `true`.
+Conditional statements are blocks of code that are only ran if a certain
+*condition* is met. The `if` keyword is used to create conditional statements in
+JavaScript. Blocks of code that are put under an `if` statement will only be run
+if the *condition* provided is evaluated to `true`.
 
 ```javascript
 const age = 20;
@@ -16,8 +17,8 @@ if (age < 18) {
 
 ###### Alternate Code Path
 
-An alternate block of code can be run instead whenever the condition in the `if` block fails. The `else` keyword is used
-to define the fallback block of code.
+An alternate block of code can be run instead whenever the condition in the `if`
+block fails. The `else` keyword is used to define the fallback block of code.
 
 ```javascript
 const price = 100;
@@ -32,8 +33,9 @@ if (balance < price) {
 
 ###### Chaining Conditions
 
-Multiple conditions can be checked before the last fallback `else` block using the `else if` keywords. It can be used as
-many times as needed after an `if` block and before the last `else` block if there is any.
+Multiple conditions can be checked before the last fallback `else` block using
+the `else if` keywords. It can be used as many times as needed after an `if`
+block and before the last `else` block if there is any.
 
 ```javascript
 const num = 420;
@@ -49,8 +51,9 @@ if (num > 0) {
 
 ###### Code Formatters
 
-Prettier is a code formatting tool that is used to enforce a standardized code style across files and projects. Prettier
-comes with a default and highly opinionated code style guideline among which some styles can be customized.
+Prettier is a code formatting tool that is used to enforce a standardized code
+style across files and projects. Prettier comes with a default and highly
+opinionated code style guideline among which some styles can be customized.
 
 ###### Odd-Even Checker
 
@@ -100,7 +103,8 @@ for (let num = 1; num <= 100; num++) {
 
 ###### Logical Operators
 
-The `&&`, `||` and `!` operators are used on boolean values. These are the logical operators in JavaScript.
+The `&&`, `||` and `!` operators are used on boolean values. These are the
+logical operators in JavaScript.
 
 ```javascript
 const a = true;
@@ -138,9 +142,10 @@ if (!accessGranted) {
 
 ###### Template Literals
 
-Template literal strings in JavaScript are used to inject evaluated values into strings. These strings can also be used
-as part of a *tagged function* which allows for functions to be called with the string literal and the arguments passed
-in for further processing in a shorthand syntax.
+Template literal strings in JavaScript are used to inject evaluated values into
+strings. These strings can also be used as part of a *tagged function* which
+allows for functions to be called with the string literal and the arguments
+passed in for further processing in a shorthand syntax.
 
 ```javascript
 const name = "Jannatin Naim";
@@ -151,8 +156,9 @@ console.log(`I'm ${name} and I am ${age} years old.`); // I'm Jannatin Naim and 
 
 ###### `switch` Statement
 
-We can define multiple paths based on the value of a single element using a `switch` statement. Based on the value,
-the `switch` *cases* will be executed for the first that evaluate to true and will *fall through* unless a `break`
+We can define multiple paths based on the value of a single element using
+a `switch` statement. Based on the value, the `switch` *cases* will be executed
+for the first that evaluate to true and will *fall through* unless a `break`
 statement is used.
 
 ```javascript
@@ -175,8 +181,9 @@ switch (num) {
 
 ###### `switch` `case` Scoping
 
-Switch cases have a shared scope among all the cases, if we want individual scopes, we can wrap the case in `{}`.
-Otherwise, we can just keep writing our code in between `case` statements and those will be the only block of code ran
+Switch cases have a shared scope among all the cases, if we want individual
+scopes, we can wrap the case in `{}`. Otherwise, we can just keep writing our
+code in between `case` statements and those will be the only block of code ran
 if its preceding case passes.
 
 ###### `switch` `case` Fall Through
@@ -210,8 +217,8 @@ switch (num) {
 
 ###### `default` Case
 
-If we want to handled unexpected values we can set a `default` block that will run if none of the previous cases were
-matched.
+If we want to handle unexpected values we can set a `default` block that will
+run if none of the previous cases were matched.
 
 ```javascript
 const letter = "c";
@@ -233,7 +240,7 @@ switch (letter) {
 
 ###### `Date` Object
 
-In JavaScript we can get the current date-time using the following code:
+In JavaScript, we can get the current date-time using the following code:
 
 ```javascript
 const date = new Date();
@@ -241,8 +248,9 @@ const date = new Date();
 console.log(date); // 2024-06-22T05:56:40.812Z
 ```
 
-We can get the current *day of the week* using the `getDay` method on a `Date` object. However, this function will
-return an integer instead of a string. The integer represents the index of an array with the days of the week in order
+We can get the current *day of the week* using the `getDay` method on a `Date`
+object. However, this function will return an integer instead of a string. The
+integer represents the index of an array with the days of the week in order
 starting from Sunday at the first position.
 
 - [Date - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
@@ -288,8 +296,8 @@ console.log(`Today is ${dayString}.`); // Today is Saturday.
 
 ###### `Math` Object
 
-The `random` function on the `Math` object will generate a floating point number between 0 (inclusive) and 1 (
-exclusive).
+The `random` function on the `Math` object will generate a floating point number
+between 0 (inclusive) and 1 ( exclusive).
 
 ```javascript
 const randomNumber = Math.random();
@@ -301,8 +309,8 @@ console.log(randomNumber); // 0.8327279540178107
 
 ###### String `charCodeAt` Method
 
-The `charCodeAt` function on the `String` data type can be used to get the ASCII character code at a position of the
-string.
+The `charCodeAt` function on the `String` data type can be used to get the ASCII
+character code at a position of the string.
 
 ```javascript
 const string = "Hello, world!";

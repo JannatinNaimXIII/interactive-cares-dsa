@@ -2,8 +2,9 @@
 
 ###### Conditional Statements
 
-In JavaScript, we can conditionally run a block a code i.e. we can choose if a block of code is ran or not depending on
-a condition we provide and what to do if that condition is not met. This is done through the `if` and `else` keywords.
+In JavaScript, we can conditionally run a block a code i.e. we can choose if a
+block of code is ran or not depending on a condition we provide and what to do
+if that condition is not met. This is done through the `if` and `else` keywords.
 
 ```javascript
 let x = 0;
@@ -26,8 +27,8 @@ Loops are used to run a block of code multiple times based on a condition.
 
 ###### `while` Loop
 
-`while` loops are the most basic form of loops. As long as the *condition* provided in the loop holds true, the body of
-the loop will keep running.
+`while` loops are the most basic form of loops. As long as the *condition*
+provided in the loop holds true, the body of the loop will keep running.
 
 ```javascript
 while (condition) {
@@ -35,8 +36,9 @@ while (condition) {
 }
 ```
 
-The loop will check the condition first, then run the body. It will keep checking the condition and running the body for
-as long as the condition holds true.
+The loop will check the condition first, then run the body. It will keep
+checking the condition and running the body for as long as the condition holds
+true.
 
 ```javascript
 let i = 0;
@@ -47,23 +49,25 @@ while (i < 10) {
 }
 ```
 
-If we put a statement that will forever evaluate to *true* inside the *condition* for the while loop, we'll get stuck in
-an infinite iteration and our program will hang.
+If we put a statement that will forever evaluate to *true* inside the
+*condition* for the while loop, we'll get stuck in an infinite iteration and our
+program will hang.
 
 ```javascript
 while (true) {
 }
 ```
 
-**NOTE**: The condition doesn't have to evaluate to exactly a `true` or `false` value, it just has to be a value that is
-either *truthy* or *falsy*.
+**NOTE**: The condition doesn't have to evaluate to exactly a `true` or `false`
+value, it just has to be a value that is either *truthy* or *falsy*.
 
 - [While loop - Wikipedia](https://en.wikipedia.org/wiki/While_loop)
 - [JavaScript while Loop (w3schools.com)](https://www.w3schools.com/js/js_loop_while.asp)
 
 ###### `do` Loop
 
-A `do` loop is where the function body is executed once regardless of the condition being true or false.
+A `do` loop is where the function body is executed once regardless of the
+condition being true or false.
 
 ```javascript
 do {
@@ -71,7 +75,8 @@ do {
 } while (condition)
 ```
 
-In this loop, the body will run at least once before the condition is checked and the loop will continue if it is met.
+In this loop, the body will run at least once before the condition is checked
+and the loop will continue if it is met.
 
 ```javascript
 let i = 0;
@@ -84,7 +89,8 @@ do {
 
 ###### `for` Loop
 
-`for` loops are used as a shorthand for 3 distinct operations and a block of code that is iterated over.
+`for` loops are used as a shorthand for 3 distinct operations and a block of
+code that is iterated over.
 
 ```javascript
 for (initialization; condition; post_iteration) {
@@ -92,11 +98,13 @@ for (initialization; condition; post_iteration) {
 }
 ```
 
-The loop runs in the following order. It first runs the *initialization* step once at the start of the loop. Then it
-checks the condition to see if it is valid or not. It then runs the body of the loop. Finally, it runs the *post
+The loop runs in the following order. It first runs the *initialization* step
+once at the start of the loop. Then it checks the condition to see if it is
+valid or not. It then runs the body of the loop. Finally, it runs the *post
 iteration* section of the loop. That completes the first cycle of the loop.
 
-From the second iteration, only the *condition*, *post iteration* and *body* of the loop is evaluated.
+From the second iteration, only the *condition*, *post iteration* and *body* of
+the loop is evaluated.
 
 ```javascript
 for (let i = 0; i < 10; i++) {
@@ -104,8 +112,9 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-The `++` operator can be used to quickly increment a value. This operator can be placed both *in front* and *after* the
-variable and based on the expression its being used in, the results will vary.
+The `++` operator can be used to quickly increment a value. This operator can be
+placed both *in front* and *after* the variable and based on the expression its
+being used in, the results will vary.
 
 ```javascript
 let x = 10;
@@ -123,8 +132,9 @@ let y = ++x;
 console.log(x, y); // 11, 11
 ```
 
-**NOTE**: The only required syntax of a `for` loop are the `;`s and the actual declaration along with the body scope. We
-can leave everything empty and our program will be stuck in a loop and hang.
+**NOTE**: The only required syntax of a `for` loop are the `;`s and the actual
+declaration along with the body scope. We can leave everything empty and our
+program will be stuck in a loop and hang.
 
 ```javascript
 for (; ;) {
@@ -143,7 +153,8 @@ for (let i = 0; i < names.length; i++) {
 }
 ```
 
-The `break` keyword can be used to *stop* the iteration of the loop and continue to the next block.
+The `break` keyword can be used to *stop* the iteration of the loop and continue
+to the next block.
 
 ```javascript
 const nums = [1, 2, 3, 4, 5];
@@ -157,7 +168,8 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-The `continue` keyword can be used to skip over an iteration of the loop and *continue* to the next iteration.
+The `continue` keyword can be used to skip over an iteration of the loop and
+*continue* to the next iteration.
 
 ```javascript
 const nums = [1, 2, 3, 4, 5];
@@ -171,16 +183,18 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-**TIP**: When you know the *number of times you need to iterate* it is recommended to use a `for` loop whereas, if the
-*number of iterations are unknown* it is recommended to use a `while` loop.
+**TIP**: When you know the *number of times you need to iterate* it is
+recommended to use a `for` loop whereas, if the *number of iterations are
+unknown* it is recommended to use a `while` loop.
 
 - [For loop - Wikipedia](https://en.wikipedia.org/wiki/For_loop)
 - [JavaScript for Loop (w3schools.com)](https://www.w3schools.com/js/js_loop_for.asp)
 
 ###### `for of` Loop
 
-*Iterables* such as arrays can be iterated over through the `for of` loop. This will loop over every element of the
-array and assign each element to an identifier in the loop.
+*Iterables* such as arrays can be iterated over through the `for of` loop. This
+will loop over every element of the array and assign each element to an
+identifier in the loop.
 
 ```javascript
 const nums = [1, 2, 3, 4];
@@ -194,8 +208,9 @@ for (const num of nums) {
 
 ###### `forEach` Array Method
 
-The built-in array method `forEach` can also be used to iterate over array elements. It takes a *callback function* that
-is then ran for every element in that array.
+The built-in array method `forEach` can also be used to iterate over array
+elements. It takes a *callback function* that is then ran for every element in
+that array.
 
 ```javascript
 const nums = [1, 2, 3, 4];
@@ -209,7 +224,8 @@ nums.forEach(function (num) {
 
 ###### Nested Loops
 
-We can write loops within loops which are called nested loops. You can go as deep as you want with nesting.
+We can write loops within loops which are called nested loops. You can go as
+deep as you want with nesting.
 
 ```javascript
 for (let i = 0; i < 10; i++) {
@@ -223,8 +239,8 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-**NOTE**: Nested loops are useful for traversing *multidimensional* arrays. A multidimensional array is an array that
-contains other arrays as its elements.
+**NOTE**: Nested loops are useful for traversing *multidimensional* arrays. A
+multidimensional array is an array that contains other arrays as its elements.
 
 ```javascript
 const people = [

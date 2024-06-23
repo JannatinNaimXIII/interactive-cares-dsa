@@ -2,10 +2,12 @@
 
 ###### Higher Order Functions
 
-Functions are treated as *first class citizens* in JavaScript i.e. they can be used as values throughout the application
-and passed around as a reference type data.
+Functions are treated as *first class citizens* in JavaScript i.e. they can be
+used as values throughout the application and passed around as a reference type
+data.
 
-Functions that either take in a function as an argument or return one is called a *higher order function*.
+Functions that either take in a function as an argument or return one is called
+a *higher order function*.
 
 ```javascript
 function sayHi(name) {
@@ -24,13 +26,14 @@ welcome("Naim", sayHi);
 
 ###### Callback Functions
 
-A function when passed into another function for delayed execution is called a *callback* function. This is when you
-leave the invocation of a function up to another function to decide and just provide it with the definition of your
-function body. The arguments that are passed, the time its called is handled by the higher order function that took the
-callback function as an argument itself.
+A function when passed into another function for delayed execution is called a
+*callback* function. This is when you leave the invocation of a function up to
+another function to decide and just provide it with the definition of your
+function body. The arguments that are passed, the time its called is handled by
+the higher order function that took the callback function as an argument itself.
 
-Callback functions are widely used as event handlers as a defined behavior is only executed when certain things may
-happen.
+Callback functions are widely used as event handlers as a defined behavior is
+only executed when certain things may happen.
 
 ```javascript
 function buttonClickHandler() {
@@ -69,8 +72,9 @@ fizzbuzz(10, 200);
 
 ###### Rest Operator
 
-A function can take in an specified number of values as arguments by using the `...` (rest/spread) operator. This is
-used to catch all the values passed as arguments to a function into an array with a specified identifier.
+A function can take in an specified number of values as arguments by using
+the `...` (rest/spread) operator. This is used to catch all the values passed as
+arguments to a function into an array with a specified identifier.
 
 ```javascript
 function addNumbers(...nums) {
@@ -84,8 +88,9 @@ function addNumbers(...nums) {
 console.log(addNumbers(1, 2, 3, 4, 5)); // 15
 ```
 
-The rest operator can be used to catch extra arguments in a function after the named parameters have been defined.
-However, the spread operator has to be used on the last parameter of the function.
+The rest operator can be used to catch extra arguments in a function after the
+named parameters have been defined. However, the spread operator has to be used
+on the last parameter of the function.
 
 ```javascript
 function cart(name, ...items) {
@@ -100,8 +105,9 @@ cart("Naim", "Pen", "Paper");
 
 ###### Spread Operator
 
-Similarly to the concept of collecting multiple arguments of a function in a single variable, a single *iterable value*
-can be used to pass multiple arguments to a function. The spread operator is used in this case.
+Similarly to the concept of collecting multiple arguments of a function in a
+single variable, a single *iterable value* can be used to pass multiple
+arguments to a function. The spread operator is used in this case.
 
 ```javascript
 function addNums(a, b, c) {
@@ -113,15 +119,15 @@ const nums = [1, 2, 3];
 console.log(addNums(...nums)); // 6
 ```
 
-NOTE: The `...` operator is called spread when it's *spreading an iterable* into multiple values and rest when it's
-*collecting a number of values*.
+NOTE: The `...` operator is called spread when it's *spreading an iterable* into
+multiple values and rest when it's *collecting a number of values*.
 
 - [Spread syntax (...) - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
 ###### Arrow Functions
 
-Arrow functions are a function expression syntax introduced in ES6. These have different behaviors than regular function
-declarations.
+Arrow functions are a function expression syntax introduced in ES6. These have
+different behaviors than regular function declarations.
 
 ```javascript
 const sayHi = (name) => {
@@ -133,8 +139,8 @@ const sayHi = (name) => {
 
 ###### One Liner Arrow Functions
 
-Arrow functions when can be written in one line do not need the surrounding `{}` and an implicit return will take place
-if the function produces any value.
+Arrow functions when can be written in one line do not need the surrounding `{}`
+and an implicit return will take place if the function produces any value.
 
 ```javascript
 const add = (a, b) => a + b;
