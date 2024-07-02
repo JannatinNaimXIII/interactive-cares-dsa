@@ -3,9 +3,9 @@
 ###### Conditional Statements
 
 Conditional statements are blocks of code that are only ran if a certain
-*condition* is met. The `if` keyword is used to create conditional statements in
+_condition_ is met. The `if` keyword is used to create conditional statements in
 JavaScript. Blocks of code that are put under an `if` statement will only be run
-if the *condition* provided is evaluated to `true`.
+if the _condition_ provided is evaluated to `true`.
 
 ```javascript
 const age = 20;
@@ -136,14 +136,14 @@ if (!accessGranted) {
 }
 ```
 
-- [Logical AND (&&) - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
-- [Logical OR (||) - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
-- [Logical NOT (!) - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)
+-   [Logical AND (&&) - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
+-   [Logical OR (||) - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
+-   [Logical NOT (!) - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)
 
 ###### Template Literals
 
 Template literal strings in JavaScript are used to inject evaluated values into
-strings. These strings can also be used as part of a *tagged function* which
+strings. These strings can also be used as part of a _tagged function_ which
 allows for functions to be called with the string literal and the arguments
 passed in for further processing in a shorthand syntax.
 
@@ -157,8 +157,8 @@ console.log(`I'm ${name} and I am ${age} years old.`); // I'm Jannatin Naim and 
 ###### `switch` Statement
 
 We can define multiple paths based on the value of a single element using
-a `switch` statement. Based on the value, the `switch` *cases* will be executed
-for the first that evaluate to true and will *fall through* unless a `break`
+a `switch` statement. Based on the value, the `switch` _cases_ will be executed
+for the first that evaluate to true and will _fall through_ unless a `break`
 statement is used.
 
 ```javascript
@@ -188,7 +188,7 @@ if its preceding case passes.
 
 ###### `switch` `case` Fall Through
 
-If we don't want our cases to *fall through*, we can use a `break` statement.
+If we don't want our cases to _fall through_, we can use a `break` statement.
 
 ```javascript
 const num = 15;
@@ -248,12 +248,12 @@ const date = new Date();
 console.log(date); // 2024-06-22T05:56:40.812Z
 ```
 
-We can get the current *day of the week* using the `getDay` method on a `Date`
+We can get the current _day of the week_ using the `getDay` method on a `Date`
 object. However, this function will return an integer instead of a string. The
 integer represents the index of an array with the days of the week in order
 starting from Sunday at the first position.
 
-- [Date - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+-   [Date - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
 ###### Print Current Date
 
@@ -279,15 +279,7 @@ switch (day) {
 const date = new Date();
 const day = date.getDay();
 
-const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-];
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const dayString = days[day];
 
@@ -304,8 +296,8 @@ const randomNumber = Math.random();
 console.log(randomNumber); // 0.8327279540178107
 ```
 
-- [Math - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
-- [JavaScript Math random() Method (w3schools.com)](https://www.w3schools.com/jsref/jsref_random.asp)
+-   [Math - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+-   [JavaScript Math random() Method (w3schools.com)](https://www.w3schools.com/jsref/jsref_random.asp)
 
 ###### String `charCodeAt` Method
 
@@ -317,4 +309,4 @@ const string = "Hello, world!";
 console.log(string.charCodeAt(0)); // 72
 ```
 
-- [String.prototype.charCodeAt() - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
+-   [String.prototype.charCodeAt() - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)

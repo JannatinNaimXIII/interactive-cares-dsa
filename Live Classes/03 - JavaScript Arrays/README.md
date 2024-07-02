@@ -2,11 +2,11 @@
 
 ###### Arrays
 
-In a variable, we can only store *one primitive value*. We can change its value
+In a variable, we can only store _one primitive value_. We can change its value
 but, it will only contain one value. In case we need to store multiple values in
 a single variable, we can use an array.
 
-An array is a *block of contiguous memory space* where we can store values of
+An array is a _block of contiguous memory space_ where we can store values of
 the same data types. However, in JavaScript the default array implementation
 allows us to mix and match different data types in the same array.
 
@@ -14,8 +14,8 @@ allows us to mix and match different data types in the same array.
 const names = ["Jannatin Naim", "S.R Setu"];
 ```
 
-- [Array (data structure) - Wikipedia](https://en.wikipedia.org/wiki/Array_(data_structure))
-- [JavaScript Arrays (w3schools.com)](https://www.w3schools.com/js/js_arrays.asp)
+-   [Array (data structure) - Wikipedia](<https://en.wikipedia.org/wiki/Array_(data_structure)>)
+-   [JavaScript Arrays (w3schools.com)](https://www.w3schools.com/js/js_arrays.asp)
 
 ###### Array Indices
 
@@ -23,7 +23,7 @@ When an array is created with an identifier, the identifier itself doesn't
 contain the values in the array. Instead, it points to the actual array in
 memory from which we can access its value using its iterator or with the `[]`
 operator by passing in an array index. Arrays in JavaScript are stored in the
-*heap memory*.
+_heap memory_.
 
 The elements in an array are indexed. The first item in an array has an index
 of `0`. To read or modify the values in the array we can use this `[]` operator
@@ -58,7 +58,7 @@ const names = [];
 names = ["Jannatin Naim"]; // ERROR: Assigned to constant variable
 ```
 
-- [JavaScript const (w3schools.com)](https://www.w3schools.com/js/js_array_const.asp)
+-   [JavaScript const (w3schools.com)](https://www.w3schools.com/js/js_array_const.asp)
 
 ###### Dynamic Array Sizes
 
@@ -69,7 +69,7 @@ during runtime and will be handled by the engine itself.
 ###### Invalid Indices & Empty Values
 
 If we try to insert values into an array while leaving gaps in the indices, they
-will be marked as *empty items* when we try to access them.
+will be marked as _empty items_ when we try to access them.
 
 ```javascript
 const nums = [1, 2];
@@ -78,13 +78,13 @@ nums[4] = 5;
 console.log(nums); // [1, 2, <2 empty items>, 4]
 ```
 
-If we try to access a value that's marked as an *empty item* we'll
+If we try to access a value that's marked as an _empty item_ we'll
 get `undefined`.
 
 ###### `delete` Array Items
 
 We can delete an element at a certain index of an array using the delete
-keyword. The item deleted will be filled with an *empty object* and the length
+keyword. The item deleted will be filled with an _empty object_ and the length
 of the array will remain unaffected.
 
 ```javascript
@@ -110,7 +110,7 @@ const b = [1, 2, 3];
 console.log(a === b); // false
 ```
 
-To check for *deep equality* of arrays, you need to manually go through every
+To check for _deep equality_ of arrays, you need to manually go through every
 element and check for equality based on that. There are algorithms that will
 help you efficiently compare two different arrays but, you cannot do it using
 just the `==` or `===` operators.
@@ -130,19 +130,19 @@ console.log(a === b); // true
 
 ###### JavaScript Array Methods
 
-JavaScript's arrays have built in *methods* that we can access on an array
+JavaScript's arrays have built in _methods_ that we can access on an array
 identifier or constant. Some of these methods mutate the original array while
 others do not.
 
 Built-in array methods such as `map`, `filter`, `reduce`, `every`, `some`
 and `sort` are very powerful. Learn more about their uses over here.
 
-- [JavaScript Array Methods (w3schools.com)](https://www.w3schools.com/js/js_array_methods.asp)
+-   [JavaScript Array Methods (w3schools.com)](https://www.w3schools.com/js/js_array_methods.asp)
 
 ###### `split` String Method
 
 We can create arrays from strings through the `split` method where a string is
-*split* into array elements based on a delimiter. This is possible
+_split_ into array elements based on a delimiter. This is possible
 because `string`s are an array like structure.
 
 ```javascript
@@ -154,7 +154,7 @@ console.log(numsFromString); // [1, 2, 3]
 ```
 
 **NOTE**: The `split` method will not modify the existing string. Instead, it
-will return a *newly created* array which can be assigned to a variable or used
+will return a _newly created_ array which can be assigned to a variable or used
 in an expression.
 
 ###### `pop` Array Method
@@ -225,11 +225,11 @@ console.log(nums); // [1, 2, 3, 4]
 
 ###### Hoisting
 
-JavaScript's values are *hoisted* to the top of the function scope. `const`
+JavaScript's values are _hoisted_ to the top of the function scope. `const`
 and `let` variables are not hoisted but `function` declarations and variables
 created with `var` are hoisted to the top.
 
-- [JavaScript Hoisting (w3schools.com)](https://www.w3schools.com/js/js_hoisting.asp)
+-   [JavaScript Hoisting (w3schools.com)](https://www.w3schools.com/js/js_hoisting.asp)
 
 ###### Nested Arrays
 
@@ -240,8 +240,8 @@ in the same array. That means, we can store arrays within arrays as well.
 const phones = [
     ["Samsung", "S24", 110000],
     ["iPhone", "15ProMax", 130000],
-    ["Nokia", "2700c", Infinity]
-]
+    ["Nokia", "2700c", Infinity],
+];
 
 const samsungPhone = phones[0];
 console.log(samsungPhone.model); // S24

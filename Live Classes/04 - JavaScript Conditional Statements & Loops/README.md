@@ -18,8 +18,8 @@ if (x < 0) {
 }
 ```
 
-- [Conditional (computer programming) - Wikipedia](https://en.wikipedia.org/wiki/Conditional_(computer_programming))
-- [JavaScript if else else if (w3schools.com)](https://www.w3schools.com/js/js_if_else.asp)
+-   [Conditional (computer programming) - Wikipedia](<https://en.wikipedia.org/wiki/Conditional_(computer_programming)>)
+-   [JavaScript if else else if (w3schools.com)](https://www.w3schools.com/js/js_if_else.asp)
 
 ###### Loops
 
@@ -27,12 +27,12 @@ Loops are used to run a block of code multiple times based on a condition.
 
 ###### `while` Loop
 
-`while` loops are the most basic form of loops. As long as the *condition*
+`while` loops are the most basic form of loops. As long as the _condition_
 provided in the loop holds true, the body of the loop will keep running.
 
 ```javascript
 while (condition) {
-    body
+    body;
 }
 ```
 
@@ -49,20 +49,19 @@ while (i < 10) {
 }
 ```
 
-If we put a statement that will forever evaluate to *true* inside the
-*condition* for the while loop, we'll get stuck in an infinite iteration and our
+If we put a statement that will forever evaluate to _true_ inside the
+_condition_ for the while loop, we'll get stuck in an infinite iteration and our
 program will hang.
 
 ```javascript
-while (true) {
-}
+while (true) {}
 ```
 
 **NOTE**: The condition doesn't have to evaluate to exactly a `true` or `false`
-value, it just has to be a value that is either *truthy* or *falsy*.
+value, it just has to be a value that is either _truthy_ or _falsy_.
 
-- [While loop - Wikipedia](https://en.wikipedia.org/wiki/While_loop)
-- [JavaScript while Loop (w3schools.com)](https://www.w3schools.com/js/js_loop_while.asp)
+-   [While loop - Wikipedia](https://en.wikipedia.org/wiki/While_loop)
+-   [JavaScript while Loop (w3schools.com)](https://www.w3schools.com/js/js_loop_while.asp)
 
 ###### `do` Loop
 
@@ -71,8 +70,8 @@ condition being true or false.
 
 ```javascript
 do {
-    body
-} while (condition)
+    body;
+} while (condition);
 ```
 
 In this loop, the body will run at least once before the condition is checked
@@ -84,7 +83,7 @@ do {
     console.log(i);
 
     i++;
-} while (i < 10)
+} while (i < 10);
 ```
 
 ###### `for` Loop
@@ -94,16 +93,16 @@ code that is iterated over.
 
 ```javascript
 for (initialization; condition; post_iteration) {
-    body
+    body;
 }
 ```
 
-The loop runs in the following order. It first runs the *initialization* step
+The loop runs in the following order. It first runs the _initialization_ step
 once at the start of the loop. Then it checks the condition to see if it is
-valid or not. It then runs the body of the loop. Finally, it runs the *post
-iteration* section of the loop. That completes the first cycle of the loop.
+valid or not. It then runs the body of the loop. Finally, it runs the _post
+iteration_ section of the loop. That completes the first cycle of the loop.
 
-From the second iteration, only the *condition*, *post iteration* and *body* of
+From the second iteration, only the _condition_, _post iteration_ and _body_ of
 the loop is evaluated.
 
 ```javascript
@@ -113,7 +112,7 @@ for (let i = 0; i < 10; i++) {
 ```
 
 The `++` operator can be used to quickly increment a value. This operator can be
-placed both *in front* and *after* the variable and based on the expression its
+placed both _in front_ and _after_ the variable and based on the expression its
 being used in, the results will vary.
 
 ```javascript
@@ -137,8 +136,7 @@ declaration along with the body scope. We can leave everything empty and our
 program will be stuck in a loop and hang.
 
 ```javascript
-for (; ;) {
-}
+for (;;) {}
 ```
 
 To iterate over the elements of an array, we can use the following syntax.
@@ -153,7 +151,7 @@ for (let i = 0; i < names.length; i++) {
 }
 ```
 
-The `break` keyword can be used to *stop* the iteration of the loop and continue
+The `break` keyword can be used to _stop_ the iteration of the loop and continue
 to the next block.
 
 ```javascript
@@ -169,7 +167,7 @@ for (let i = 0; i < 10; i++) {
 ```
 
 The `continue` keyword can be used to skip over an iteration of the loop and
-*continue* to the next iteration.
+_continue_ to the next iteration.
 
 ```javascript
 const nums = [1, 2, 3, 4, 5];
@@ -183,16 +181,16 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-**TIP**: When you know the *number of times you need to iterate* it is
-recommended to use a `for` loop whereas, if the *number of iterations are
-unknown* it is recommended to use a `while` loop.
+**TIP**: When you know the _number of times you need to iterate_ it is
+recommended to use a `for` loop whereas, if the _number of iterations are
+unknown_ it is recommended to use a `while` loop.
 
-- [For loop - Wikipedia](https://en.wikipedia.org/wiki/For_loop)
-- [JavaScript for Loop (w3schools.com)](https://www.w3schools.com/js/js_loop_for.asp)
+-   [For loop - Wikipedia](https://en.wikipedia.org/wiki/For_loop)
+-   [JavaScript for Loop (w3schools.com)](https://www.w3schools.com/js/js_loop_for.asp)
 
 ###### `for of` Loop
 
-*Iterables* such as arrays can be iterated over through the `for of` loop. This
+_Iterables_ such as arrays can be iterated over through the `for of` loop. This
 will loop over every element of the array and assign each element to an
 identifier in the loop.
 
@@ -204,12 +202,12 @@ for (const num of nums) {
 }
 ```
 
-- [JavaScript For Of (w3schools.com)](https://www.w3schools.com/js/js_loop_forof.asp)
+-   [JavaScript For Of (w3schools.com)](https://www.w3schools.com/js/js_loop_forof.asp)
 
 ###### `forEach` Array Method
 
 The built-in array method `forEach` can also be used to iterate over array
-elements. It takes a *callback function* that is then ran for every element in
+elements. It takes a _callback function_ that is then ran for every element in
 that array.
 
 ```javascript
@@ -220,7 +218,7 @@ nums.forEach(function (num) {
 });
 ```
 
-- [JavaScript Array Iteration (w3schools.com)](https://www.w3schools.com/js/js_array_iteration.asp#mark_foreach)
+-   [JavaScript Array Iteration (w3schools.com)](https://www.w3schools.com/js/js_array_iteration.asp#mark_foreach)
 
 ###### Nested Loops
 
@@ -239,14 +237,14 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-**NOTE**: Nested loops are useful for traversing *multidimensional* arrays. A
+**NOTE**: Nested loops are useful for traversing _multidimensional_ arrays. A
 multidimensional array is an array that contains other arrays as its elements.
 
 ```javascript
 const people = [
     ["Jannatin Naim", "jannatinnaim@pondit.family", 20],
-    ["SR Setu", "srsetu@gmail.com", 30]
-]
+    ["SR Setu", "srsetu@gmail.com", 30],
+];
 
 for (let row = 0; row < people.length; row++) {
     for (let col = 0; col < people[row].length; col++) {
@@ -261,4 +259,4 @@ for (const person of people) {
 }
 ```
 
-- [Nesting (computing) - Wikipedia](https://en.wikipedia.org/wiki/Nesting_(computing))
+-   [Nesting (computing) - Wikipedia](<https://en.wikipedia.org/wiki/Nesting_(computing)>)

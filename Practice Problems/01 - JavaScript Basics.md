@@ -1,13 +1,10 @@
 Given a list of strings that contain information about people; parse the strings
-and print an output in the specified
-format. `Hi, I'm <name>. I live in <location> and I'm <age> years old.` The
-values they contain are name, age and location delimited by a `;` respectively.
+and print an output in the specified format. `Hi, I'm <name>. I live in
+<location> and I'm <age> years old.` The values they contain are name, age and
+location delimited by a `;` respectively.
 
 ```javascript
-const people = [
-    "Jannatin Naim;20;Cox's Bazar",
-    "Saidur Rahman Setu;99;Dhaka"
-]
+const people = ["Jannatin Naim;20;Cox's Bazar", "Saidur Rahman Setu;99;Dhaka"];
 
 function introduction(person) {
     let output = "";
@@ -37,11 +34,14 @@ in that list.
 const numbers = [65, 20, 94, 29, 16, 33, 81, 47, 73, 17];
 
 function stats(numbers) {
-    let sum = 0, average = 0, mixumum = 0, minimum = 0;
+    let sum = 0,
+        average = 0,
+        mixumum = 0,
+        minimum = 0;
 
     // code
 
-    return [sum, average, maximum, minimum]
+    return [sum, average, maximum, minimum];
 }
 
 const values = stats(numbers);
@@ -114,8 +114,8 @@ for (const number of values) {
 ---
 
 Given two numbers and an operator; write a calculator that performs the
-operation on the two operands. The operators will be as
-follows: `addition`, `subtraction`, `division` and `multiplication`.
+operation on the two operands. The operators will be as follows: `addition`,
+`subtraction`, `division` and `multiplication`.
 
 ```javascript
 function calculate(a, b, operation) {
@@ -141,17 +141,20 @@ occurring vowel.
 
 ```javascript
 function countVowels(string) {
-    let vowelCount = 0, mostOccurredVowel = "";
+    let vowelCount = 0,
+        mostOccurredVowel = "";
 
     // code
 
     return {
         vowelCount,
         mostOccurredVowel,
-    }
+    };
 }
 
-const result = countVowels("The quick brown fox jumps over the lazy dog. However, why does the fox jump over the dog? Can he just not leave the dog alone? I don't understand what foxes do, man.");
+const result = countVowels(
+    "The quick brown fox jumps over the lazy dog. However, why does the fox jump over the dog? Can he just not leave the dog alone? I don't understand what foxes do, man.",
+);
 
 console.log("Vowels:", result.vowelCount);
 console.log("Most Occurred Vowel:", result.mostOccurredVowel);
@@ -197,7 +200,7 @@ unique values only.
 
 ```javascript
 function findUniqueNumbers(numbers) {
-    return uniques = [];
+    const uniques = [];
 
     // code
 
@@ -251,7 +254,7 @@ const matrix = [
     [9, 8, 7],
     [6, 5, 4],
     [3, 2, 1],
-]
+];
 
 function printMatrix(matrix) {
     // code

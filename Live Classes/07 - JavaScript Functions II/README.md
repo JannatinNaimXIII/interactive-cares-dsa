@@ -2,12 +2,12 @@
 
 ###### Higher Order Functions
 
-Functions are treated as *first class citizens* in JavaScript i.e. they can be
+Functions are treated as _first class citizens_ in JavaScript i.e. they can be
 used as values throughout the application and passed around as a reference type
 data.
 
 Functions that either take in a function as an argument or return one is called
-a *higher order function*.
+a _higher order function_.
 
 ```javascript
 function sayHi(name) {
@@ -22,12 +22,12 @@ function welcome(name, greetFunction) {
 welcome("Naim", sayHi);
 ```
 
-- [Higher-Order Functions :: Eloquent JavaScript](https://eloquentjavascript.net/3rd_edition/05_higher_order.html#h_xxCc98lOBK)
+-   [Higher-Order Functions :: Eloquent JavaScript](https://eloquentjavascript.net/3rd_edition/05_higher_order.html#h_xxCc98lOBK)
 
 ###### Callback Functions
 
 A function when passed into another function for delayed execution is called a
-*callback* function. This is when you leave the invocation of a function up to
+_callback_ function. This is when you leave the invocation of a function up to
 another function to decide and just provide it with the definition of your
 function body. The arguments that are passed, the time its called is handled by
 the higher order function that took the callback function as an argument itself.
@@ -44,8 +44,8 @@ const button = document.getElementById("button");
 button.addEventListener("click", buttonClickHandler);
 ```
 
-- [Callback function - MDN Web Docs Glossary: Definitions of Web-related terms | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
-- [JavaScript Callbacks (w3schools.com)](https://www.w3schools.com/js/js_callback.asp)
+-   [Callback function - MDN Web Docs Glossary: Definitions of Web-related terms | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+-   [JavaScript Callbacks (w3schools.com)](https://www.w3schools.com/js/js_callback.asp)
 
 ###### Fizz Buzz Function
 
@@ -101,12 +101,12 @@ function cart(name, ...items) {
 cart("Naim", "Pen", "Paper");
 ```
 
-- [Rest parameters - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+-   [Rest parameters - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 
 ###### Spread Operator
 
 Similarly to the concept of collecting multiple arguments of a function in a
-single variable, a single *iterable value* can be used to pass multiple
+single variable, a single _iterable value_ can be used to pass multiple
 arguments to a function. The spread operator is used in this case.
 
 ```javascript
@@ -119,10 +119,10 @@ const nums = [1, 2, 3];
 console.log(addNums(...nums)); // 6
 ```
 
-NOTE: The `...` operator is called spread when it's *spreading an iterable* into
-multiple values and rest when it's *collecting a number of values*.
+NOTE: The `...` operator is called spread when it's _spreading an iterable_ into
+multiple values and rest when it's _collecting a number of values_.
 
-- [Spread syntax (...) - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+-   [Spread syntax (...) - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
 ###### Arrow Functions
 
@@ -132,10 +132,10 @@ different behaviors than regular function declarations.
 ```javascript
 const sayHi = (name) => {
     console.log(`Hi, ${name}`);
-}
+};
 ```
 
-- [Arrow function expressions - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+-   [Arrow function expressions - JavaScript | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
 ###### One Liner Arrow Functions
 

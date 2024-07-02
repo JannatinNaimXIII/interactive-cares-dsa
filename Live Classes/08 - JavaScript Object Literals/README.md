@@ -2,15 +2,15 @@
 
 ###### Object Initialization & Accessing Values
 
-Objects are a store of *key value pairs* in JavaScript. Objects can be created
-using the *object literal syntax*. Values inside an object can be accessed using
+Objects are a store of _key value pairs_ in JavaScript. Objects can be created
+using the _object literal syntax_. Values inside an object can be accessed using
 the identifier followed by a `.` and then the key or using the identifier and
 the key in between `[]`.
 
 ```javascript
 let object = {
     key: value,
-}
+};
 
 object.key;
 object["key"];
@@ -20,7 +20,7 @@ object["key"];
 let person = {
     name: "Jannatin Naim",
     age: 20,
-}
+};
 
 console.log(person.name); // Jannatin Naim
 console.log(person["age"]); // 20
@@ -29,7 +29,7 @@ console.log(person["age"]); // 20
 ###### Value Types
 
 The keys can hold any type of value. The ones that hold information we call them
-*properties* and the ones that contain functions, we call them *methods*.
+_properties_ and the ones that contain functions, we call them _methods_.
 Functions when they are part of an object are called methods. Methods can be
 declared like properties or as a function declaration.
 
@@ -41,8 +41,8 @@ const phone = {
     },
     shutdown() {
         console.log("Shutting down.");
-    }
-}
+    },
+};
 
 console.log(phone.model); // iPhone 14 Pro Max
 phone.boot(); // Booting up phone.
@@ -54,19 +54,19 @@ phone.shutdown(); // Shutting down.
 Accessing unknown properties on an object will return `undefined`.
 
 ```javascript
-const x = {}
+const x = {};
 
 console.log(x.y); // undefined
 ```
 
 ###### Strict Mode
 
-JavaScript's *strict mode* can be used to prevent common bugs from appearing in
+JavaScript's _strict mode_ can be used to prevent common bugs from appearing in
 our code. It sets some stricter guidelines to follow while coding. Code that may
-be valid JavaScript and will be executed without *errors* will often be blocked
+be valid JavaScript and will be executed without _errors_ will often be blocked
 by the strict mode in case it contains dangerous behavior.
 
-- [JavaScript "use strict" (w3schools.com)](https://www.w3schools.com/js/js_strict.asp)
+-   [JavaScript "use strict" (w3schools.com)](https://www.w3schools.com/js/js_strict.asp)
 
 ###### Object Property Mutation
 
@@ -78,7 +78,7 @@ the `delete` keyword.
 const os = {
     name: "Windows",
     version: 11,
-}
+};
 
 os.name = "Windows 11";
 os.build = "22H2";
@@ -96,8 +96,8 @@ deeply nested values.
 const x = {
     y: {
         z: "Hi.",
-    }
-}
+    },
+};
 
 console.log(x.y.z); // Hi.
 ```
@@ -117,8 +117,8 @@ const calculator = {
     },
     multiply(a, b) {
         return a * b;
-    }
-}
+    },
+};
 
 calculator.add(1, 2); // 3
 calculator.subtract(3, 4); // -1
@@ -128,13 +128,13 @@ calculator.multiply(7, 8); // 56
 
 ###### Object `for in` Loops
 
-We can use a `for in` loop to iterate over the *keys* of an object.
+We can use a `for in` loop to iterate over the _keys_ of an object.
 
 ```javascript
 const person = {
     name: "Jannatin Naim",
     age: 20,
-}
+};
 
 for (const key in person) {
     console.log(person[key]); // Jannatin Naim, age
@@ -144,7 +144,7 @@ for (const key in person) {
 ###### Factory Functions
 
 Objects that are created with the same set of keys can be produced using a
-*factory function* or a *constructor function* that provide a common blueprint
+_factory function_ or a _constructor function_ that provide a common blueprint
 to create new objects with similar keys but different values.
 
 ```javascript
@@ -154,7 +154,7 @@ function createPhone(brand, model, price) {
         model,
         price,
         isAvailable: true,
-    }
+    };
 }
 
 const iPhone14ProMax = createPhone("Apple", "14 Pro Max", 120_000);
