@@ -1,1 +1,1 @@
-# 01 - Modeling a Bank
+# DSA Conceptual Class - 01 - Modeling a Bank

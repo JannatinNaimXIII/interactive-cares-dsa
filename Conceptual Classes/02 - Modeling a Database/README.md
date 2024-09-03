@@ -1,1 +1,1 @@
-# Modeling a Database
+# DSA Conceptual Class - 02 - Modeling a Database
