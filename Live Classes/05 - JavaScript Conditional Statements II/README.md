@@ -279,7 +279,15 @@ switch (day) {
 const date = new Date();
 const day = date.getDay();
 
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+];
 
 const dayString = days[day];
 
